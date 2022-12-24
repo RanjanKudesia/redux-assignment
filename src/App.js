@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { Provider } from "react-redux";
 import store from './app/store/store';
 import { Container } from '@material-ui/core';
+import Footer from './components/Footer';
 
 
 
@@ -20,6 +21,7 @@ function App() {
               <Route path='/cart' element={<Cart />} />
             </Routes>
           </Container>
+            {/* <Footer /> */}
         </BrowserRouter>
       </Provider>
     </>
