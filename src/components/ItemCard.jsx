@@ -7,7 +7,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-// import ArrowForwardIcon from '@material-ui/styles/ArrowForwardIcon';
 import { add } from '../app/functions/cart/cartSlice';
 import { useDispatch } from 'react-redux';
 
@@ -55,7 +54,7 @@ export default function MediaCard({ details }) {
                     {price}
                 </IconButton>
                 <Button onClick={handleAddProduct} size="large" >
-                    {/* <ArrowForwardIcon /> */}Add to Cart
+                &#8594;
                 </Button>
             </CardActions>
         </Card>

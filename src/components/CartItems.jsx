@@ -7,7 +7,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
-// import ArrowForwardIcon from '@material-ui/styles/ArrowForwardIcon';
 import { remove } from '../app/functions/cart/cartSlice';
 import { useDispatch } from 'react-redux';
 
@@ -55,7 +54,7 @@ export default function CartItems({ details }) {
                     {price}
                 </IconButton>
                 <Button onClick={handleRemoveProduct} size="large" >
-                    {/* <ArrowForwardIcon /> */}Remove From cart
+                    Remove From cart
                 </Button>
             </CardActions>
         </Card>

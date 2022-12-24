@@ -1,9 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from './pages/Home';
-import Cart from './components/Cart';
+import Cart from './pages/Cart';
 import Navbar from './components/Navbar';
 import { Provider } from "react-redux";
 import store from './app/store/store';
+import { Container } from '@material-ui/core';
+
 
 
 function App() {
@@ -11,11 +13,13 @@ function App() {
     <>
       <Provider store={store}>
         <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/cart' element={<Cart />} />
-          </Routes>
+          <Container maxWidth='lg'>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/cart' element={<Cart />} />
+            </Routes>
+          </Container>
         </BrowserRouter>
       </Provider>
     </>
